@@ -1,5 +1,5 @@
 # Loops and Conditions
-
+Loops and Conditions
 ## About
 Includes tasks of three difficulty levels to familiarize yourself with the basics of JavaScript.
 
