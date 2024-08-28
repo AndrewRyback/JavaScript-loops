@@ -90,19 +90,17 @@ alert(`Найбільший спільний дільник є ${firstNumber}`);
 // Task 5
 
 
-alert('Дізнаємось всі дільники числа');
-let num = Number(prompt('Введи число'));
+alert(`Дізнаємось дільник числа!`);
+let num = Number(prompt(`Введіть число`));
 
-if (isNaN(num) || num <= 0) {
-    alert('Будь ласка, введіть правильне число.');
+if (num <= 0) {
+  alert(`Число має бути більше нуля`);
 } else {
-    let divisors = [];
-    for (let i = 1; i <= num; i++) {
-        if (num % i === 0) {
-            divisors.push(i);
-        }
+  let dividers = "";
+  for (let i = 1; i <= num; i++) {
+    if (num % i == 0) {
+      dividers += i + " ";
     }
-    alert(`Дільники числа ${num}: ${divisors.join(",")} `);
-
-} 
-findDivisors();
+  }
+  alert(`Дільники числа ${num}: ${dividers}`);
+}
